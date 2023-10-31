@@ -1,3 +1,4 @@
 export default function useUser() {
-  return {}
+  const test = ''
+  return { test }
 }
