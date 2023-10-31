@@ -67,6 +67,10 @@
     "prettier": "^3.0.3"
   },
   "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "^@root(.*)$": "<rootDir>/src$1",
       "^@components(.*)$": "<rootDir>/src/components$1",
