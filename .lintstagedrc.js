@@ -3,7 +3,7 @@ module.exports = {
   '**/*.(ts|tsx), !reportWebVitals.ts': () => 'yarn tsc --noEmit',
 
   // Lint & Prettify TS and JS files
-  '**/*.(ts|tsx)': (filenames) => [
+  '**/*.(ts|tsx), !reportWebVitals.ts': (filenames) => [
     `yarn eslint ${filenames.join(' ')}`,
     `yarn prettier --write ${filenames.join(' ')}`,
   ],
