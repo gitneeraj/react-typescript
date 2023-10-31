@@ -17,6 +17,5 @@
     "jsx": "react-jsx"
   },
   "extends": "./tsconfig.paths.json",
-  "include": ["src"],
-  "exclude": ["node_modules", "./.lintstagedrc.js"]
+  "include": ["src"]
 }
