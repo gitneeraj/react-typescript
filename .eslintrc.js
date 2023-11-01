@@ -20,10 +20,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['./.lintstagedrc.js'],
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/promise-function-async': 'off',
   },
 }
